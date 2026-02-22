@@ -1,14 +1,19 @@
 package cse.gtihub;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-class CSErocksTest {
+public class CSErocksTest {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+    // Add method is missing in your code → So we add it
+    public int add(int a, int b) {
+        return a + b;
+    }
 
+    @Test
+    void test1() {
+        csedemo cal = new csedemo();
+        int result = cal.add(2, 3);
+        assertEquals(5, result);
+    }
 }
